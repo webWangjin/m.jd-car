@@ -1,0 +1,94 @@
+html,body{
+    height: 100%;/*满屏的写法*/
+    /*在body里面的背景颜色是不受高度影响*/
+}
+body{
+    min-width: 320px;
+}
+
+/*分类的主体 占满剩余的高度*/
+.jd_category{
+    height: 100%;
+    padding-top: 45px;
+    overflow: hidden;
+}
+/*左侧栏*/
+.jd_category .category_left{
+    height: 100%;
+    width: 90px;
+    float: left;
+    overflow: hidden;
+}
+.jd_category .category_left ul{
+    width: 100%;
+}
+.jd_category .category_left ul li{
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    height: 50px;
+    width: 100%;
+    background: #f3f4f6;
+    line-height: 50px;
+    text-align: center;
+}
+.jd_category .category_left ul li.now{
+    background: #fff;
+    border-right: none;
+}
+.jd_category .category_left ul li a{
+    display: block;
+}
+.jd_category .category_left ul li.now a{
+    color: #d8505c;
+}
+
+
+
+/*右侧栏*/
+.jd_category .category_right{
+    height: 100%;
+    overflow: hidden;
+}
+
+.category_right_con{
+    padding: 0 10px;
+}
+.category_right_con .banner{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+.category_right_con .banner img{
+    display: block;
+    width: 100%;
+}
+.category_right_con .category_item{
+    margin-top: 10px;
+}
+
+.category_right_con .category_item h3{
+    font-size: 12px;
+}
+.category_right_con .category_item ul{
+    width: 100%;
+}
+.category_right_con .category_item ul li{
+    width: 33.33333%;
+    float: left;
+}
+.category_right_con .category_item ul li a{
+    width: 100%;
+    display: block;
+}
+.category_right_con .category_item ul li a img{
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+}
+.category_right_con .category_item ul li a p{
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+    padding: 5px 0;
+}

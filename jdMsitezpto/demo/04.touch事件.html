@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0"/>
+    <title></title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            width: 200px;
+            height: 200px;
+            display: block;
+            -webkit-tap-highlight-color: transparent;/*轻击*/
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <a href="javascript:;"></a>
+    <script>
+        var dom = document.querySelector('a');
+        /*绑定触摸刚刚开始*/
+        dom.addEventListener('touchstart',function(e){
+            console.log('touchstart');
+            console.log(e);
+        });
+        /*绑定触摸滑动事件*/
+        dom.addEventListener('touchmove',function(e){
+            console.log('touchmove');
+            console.log(e);
+        });
+        /*绑定触摸离开事件*/
+        dom.addEventListener('touchend',function(e){
+            console.log('touchend');
+            console.log(e);
+        });
+    </script>
+</body>
+</html>
